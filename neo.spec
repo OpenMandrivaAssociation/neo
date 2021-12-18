@@ -17,7 +17,6 @@ neo recreates the digital rain effect from "The Matrix". Streams of random chara
 %autosetup -p1
 
 %build
-./autogen.sh
 %configure
 %make_build
 
