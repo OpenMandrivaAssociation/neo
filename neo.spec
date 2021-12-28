@@ -26,6 +26,5 @@ neo recreates the digital rain effect from "The Matrix". Streams of random chara
 
 %files
 %license COPYING
-%doc NEWS
 %{_bindir}/neo
 %{_mandir}/man6/neo.6*
