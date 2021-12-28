@@ -1,0 +1,32 @@
+From 0650f17254f920c96aeeabd16a78ce7032d02e30 Mon Sep 17 00:00:00 2001
+From: Stewart Reive <3587451+st3w@users.noreply.github.com>
+Date: Thu, 16 Dec 2021 21:48:02 -0800
+Subject: [PATCH] Remove dependency on autoconf-archive package
+
+---
+ README.md    | 1 -
+ configure.ac | 1 -
+ 2 files changed, 2 deletions(-)
+
+diff --git a/README.md b/README.md
+index 3fc06c7..709da61 100644
+--- a/README.md
++++ b/README.md
+@@ -32,7 +32,6 @@ The following packages are required to build and run **neo**:
+ - build-essential: make and g++ are used for compilation
+ - libncurses-dev: **neo** uses the ncursesw library to control the terminal
+ - autoconf: **neo** is built using autotools (NOT NEEDED if using an official release tarball)
+-- autoconf-archive: required for some of the autoconf checks (NOT NEEDED if using an official release tarball)
+ 
+ You will need to ensure that your C++ compiler supports C++11 and that your autoconf version is at least 2.61. g++ and clang++ should both work for compilation.
+ 
+diff --git a/configure.ac b/configure.ac
+index 2654ad3..67fc25f 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -9,5 +9,4 @@ AC_PROG_MAKE_SET
+ AC_CHECK_LIB(ncursesw, initscr)
+ AC_CHECK_HEADERS(getopt.h locale.h ncurses.h)
+ AC_CONFIG_FILES([Makefile doc/Makefile src/Makefile])
+-AX_CXX_COMPILE_STDCXX_11([noext], [mandatory])
+ AC_OUTPUT
