@@ -15,7 +15,7 @@ BuildRequires: pkgconfig(ncursesw)
 neo recreates the digital rain effect from "The Matrix". Streams of random characters will endlessly scroll down your terminal screen.
 
 %prep
-%autosetup -p0
+%autosetup -p1
 
 %build
 %configure
