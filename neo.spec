@@ -1,7 +1,7 @@
 Name: neo
 Summary: Simulates the digital rain from "The Matrix" (cmatrix clone with 32-bit color and Unicode support)
 Version: 0.6.1
-Release: 1
+Release: 2
 License: GPLv3
 Group:   Graphical desktop/Other
 URL:      https://github.com/st3w/neo
